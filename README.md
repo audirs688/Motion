@@ -1,4 +1,6 @@
-<h1> iFit </h1>
+<h1> iFit Coach</h1>
+
+<h3 align="center">🚧 This project is currently under revamping. 🚧 </h3> <br>
 
 <p>A Fitness Tracker App, built with Java and Firebase, connects users with fitness community, professionals and resources for a healthier lifestyle. It also offers fitness tracking, nutrition plans, and more to enhance health and fitness.</p>
 
