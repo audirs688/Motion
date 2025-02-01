@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
+    tools:context=".activity.SplashActivity"
     android:background="@color/BackgroundPrimaryColor">
 
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:text="From K.S.A. Imasha Dilnuwan Senarath \n Undergraduate @ Plymouth UK"
+        android:text="From Imasha Senarath"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary" />
 

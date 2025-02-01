@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ifitcoach">
+    package="com.imasha.ifitcoach">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,54 +14,54 @@
         android:roundIcon="@mipmap/ifit_ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewMessagesActivity"></activity>
-        <activity android:name=".MessagesActivity" />
-        <activity android:name=".ServiceManagerActivity" />
-        <activity android:name=".OrdersActivity" />
-        <activity android:name=".ViewServiceActivity" />
-        <activity android:name=".GoalsActivity" />
-        <activity android:name=".AddWorkoutActivity" />
-        <activity android:name=".ConnectionsActivity" />
-        <activity android:name=".RequestActivity" />
-        <activity android:name=".ServiceActivity" />
-        <activity android:name=".PostCommentActivity" />
-        <activity android:name=".CreateServiceActivity" />
-        <activity android:name=".AddFoodActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.ViewMessagesActivity"></activity>
+        <activity android:name="com.imasha.ifitcoach.activity.MessagesActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.ServiceManagerActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.OrdersActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.ViewServiceActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.GoalsActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.AddWorkoutActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.ConnectionsActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.RequestActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.ServiceActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.PostCommentActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.CreateServiceActivity" />
+        <activity android:name="com.imasha.ifitcoach.activity.AddFoodActivity" />
         <activity
-            android:name=".FindActivity"
+            android:name="com.imasha.ifitcoach.activity.FindActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".PostActivity"
+            android:name="com.imasha.ifitcoach.activity.PostActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".CreateFoodActivity"
+            android:name="com.imasha.ifitcoach.activity.CreateFoodActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".DiaryActivity"
+            android:name="com.imasha.ifitcoach.activity.DiaryActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".FoodListActivity"
+            android:name="com.imasha.ifitcoach.activity.FoodListActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".AccountTypeActivity"
+            android:name="com.imasha.ifitcoach.activity.AccountTypeActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".CreatePostActivity"
+            android:name="com.imasha.ifitcoach.activity.CreatePostActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".SetupActivity"
+            android:name="com.imasha.ifitcoach.activity.SetupActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.imasha.ifitcoach.activity.WelcomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.imasha.ifitcoach.activity.LoginActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".CreateAccountActivity"
+            android:name="com.imasha.ifitcoach.activity.CreateAccountActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.imasha.ifitcoach.activity.MainActivity"
             android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +70,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.imasha.ifitcoach.activity.SplashActivity"
             android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

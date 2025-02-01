@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:619480489868:android:74f76a66aaff135cb900a9",
         "android_client_info": {
-          "package_name": "com.example.ifitcoach"
+          "package_name": "com.imasha.ifitcoach"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "619480489868-brunajohser7hc0daolahs5c72646f12.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.ifitcoach",
+            "package_name": "com.imasha.ifitcoach",
             "certificate_hash": "151fe73417b3c8d74727567be3485bc6493bf80f"
           }
         },
