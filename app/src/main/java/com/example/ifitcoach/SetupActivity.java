@@ -47,8 +47,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-import com.theartofdev.edmodo.cropper.CropImage;
-import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -170,8 +168,8 @@ public class SetupActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 Uri selectedUserImage=null;
-                CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).setAspectRatio(1,1).start(SetupActivity.this);
-                CropImage.activity(selectedUserImage);
+                /*CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).setAspectRatio(1,1).start(SetupActivity.this);
+                CropImage.activity(selectedUserImage);*/
             }
         });
 
@@ -739,7 +737,7 @@ public class SetupActivity extends AppCompatActivity
     {
         super.onActivityResult(requestCode, resultCode, data);
 
-            if(requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE)
+            /*if(requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE)
             {
                 CropImage.ActivityResult result = CropImage.getActivityResult(data);
                 if(resultCode == RESULT_OK)
@@ -748,7 +746,7 @@ public class SetupActivity extends AppCompatActivity
                     Picasso.with(SetupActivity.this).load(croppedUserImage.toString()).placeholder(R.drawable.default_user_image).into(userImage);
                     imagePick= 1;
                 }
-            }
+            }*/
     }
 
 
