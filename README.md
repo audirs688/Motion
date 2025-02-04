@@ -4,15 +4,31 @@
 
 <p>A Fitness Tracker App, built with Java and Firebase, connects users with fitness community, professionals and resources for a healthier lifestyle. It also offers fitness tracking, nutrition plans, and more to enhance health and fitness.</p>
 
-<p>Note: This app is a my university final year project.</p>
+<p>Note: This app was developed as a university final-year individual project.</p>
 
 <h2> ⚙️ Technologies </h2>
 <ul>
+    <li>Java language for Android development.</li>
+    <li>Firebase backend service including Authentication, Database and Storage.</li>
+    <li>UI design with XML.</li>
 </ul>
 
 <h2> 🔥 Features </h2>
 <ul>
+    <li>Monitor daily calorie consumption and burning.</li>
+    <li>Track daily water consumption.</li>
+    <li>Maintain a diary with daily food, water, and workouts with past records.</li>
+    <li>Find detailed nutritional data for various foods.</li>
+    <li>Calculate daily calorie intake, BMI, etc based on the profile.</li>
+    <li>Set a weight loss goal and earn points by achieving it.</li>
+    <li>Users can engage with the community by sharing post, commenting and messaging with other users.</li>
+    <li>Connect with others users and view their profiles, diaries, posts, and build connections.</li>
+    <li>Professionals can sell their services by registering as a seller.</li>
+    <li>Discover professionals, get services, and rate experiences with others</li>
 </ul>
+
+<h2>🛢️ Set Up Database</h2>
+<p>This project uses Firebase, but the current Firebase account has been disabled due to spamming, so the app won’t work. To make it functional, create a new Firebase project, add the Android app, and generate the google-services.json file. Place it in the app/ directory. Then, enable Email Authentication, Realtime Database, and Cloud Storage in your Firebase project.</p>
   
 <h2> 📸 Screenshots </h2>
 
