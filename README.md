@@ -11,20 +11,21 @@
     <li>Java language for Android development.</li>
     <li>Firebase backend service including Authentication, Database and Storage.</li>
     <li>UI design with XML.</li>
+    <li>Third party libabries.</li>
 </ul>
 
 <h2> 🔥 Features </h2>
 <ul>
-    <li>Monitor daily calorie consumption and burning.</li>
-    <li>Track daily water consumption.</li>
+    <li>Monitor daily calorie consumption and calories burning.</li>
+    <li>Track daily water intake.</li>
     <li>Maintain a diary with daily food, water, and workouts with past records.</li>
-    <li>Find detailed nutritional data for various foods.</li>
-    <li>Calculate daily calorie intake, BMI, etc based on the profile.</li>
-    <li>Set a weight loss goal and earn points by achieving it.</li>
-    <li>Users can engage with the community by sharing post, commenting and messaging with other users.</li>
+    <li>Find detailed nutritional data information various foods.</li>
+    <li>Calculate daily calorie intake, BMI, and other metrics based on the profile.</li>
+    <li>Set a weight loss goals and earn points by achieving them.</li>
+    <li>Engage with the community by sharing posts, commenting, and messaging other users.</li>
     <li>Connect with others users and view their profiles, diaries, posts, and build connections.</li>
-    <li>Professionals can sell their services by registering as a seller.</li>
-    <li>Discover professionals, get services, and rate experiences with others</li>
+    <li>Professionals can sell services by registering as a seller.</li>
+    <li>Discover professionals, get services, and rate experiences with others.</li>
 </ul>
 
 <h2>🛢️ Set Up Database</h2>

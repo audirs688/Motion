@@ -1,6 +1,7 @@
 package com.imasha.ifitcoach.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -85,7 +86,8 @@ public class SetupActivity extends AppCompatActivity {
 
     public Uri croppedUserImage;
 
-    private ActivityResultLauncher<CropImageContractOptions> cropImageLauncher;
+    private ActivityResultLauncher<Intent> imagePickerLauncher;
+    //private ActivityResultLauncher<CropImageContractOptions> cropImageLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,23 +152,13 @@ public class SetupActivity extends AppCompatActivity {
             mToolBar.setTitleTextColor(getResources().getColor(R.color.PrimaryTextColor));
         }
 
-        cropImageLauncher =
-                registerForActivityResult(new CropImageContract(), result -> {
-                    if (result.isSuccessful()) {
-                        croppedUserImage = result.getUriContent();
-                        Picasso.with(SetupActivity.this).load(croppedUserImage).placeholder(R.drawable.default_user_image).into(userImage);
-                    } else {
-                        Exception exception = result.getError();
-                        exception.printStackTrace();
-                    }
-                });
-
         /* containers click actions */
         userImage.setOnClickListener(v -> {
             /*Uri selectedUserImage = null;
             CropImage.activity().setGuidelines(CropImageView.Guidelines.ON).setAspectRatio(1,1).start(SetupActivity.this);
             CropImage.activity(selectedUserImage);*/
-            startCrop();
+            //startCrop(selectedUserImage);
+            openGallery();
         });
 
         usernameContainer.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +190,6 @@ public class SetupActivity extends AppCompatActivity {
         });
 
 
-
         /* Complete button click action */
         setupCompleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -211,14 +202,45 @@ public class SetupActivity extends AppCompatActivity {
         SetUserDetailsToSetupPage();
         ActivityLevelButtonActions();
         GenderButtonActions();
+
+        imagePickerLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(), result -> {
+                    if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+                        Uri selectedImageUri = result.getData().getData();
+                        if (selectedImageUri != null) {
+                            //startCrop(selectedImageUri);
+                            croppedUserImage = selectedImageUri;
+                            Picasso.with(SetupActivity.this).load(croppedUserImage).placeholder(R.drawable.default_user_image).into(userImage);
+                        }
+                    }
+                });
+
+/*        cropImageLauncher =
+                registerForActivityResult(new CropImageContract(), result -> {
+                    if (result.isSuccessful()) {
+                        croppedUserImage = result.getUriContent();
+                        Picasso.with(SetupActivity.this).load(croppedUserImage).placeholder(R.drawable.default_user_image).into(userImage);
+                    } else {
+                        Exception exception = result.getError();
+                        exception.printStackTrace();
+                    }
+                });*/
     }
 
-    private void startCrop() {
-        cropImageLauncher.launch(
-                new CropImageContractOptions(null, new CropImageOptions())
+    private void openGallery() {
+        imagePickerLauncher.launch(
+                new Intent(Intent.ACTION_PICK)
+                        .setType("image/*")
         );
     }
 
+/*    private void startCrop(Uri uri) {
+        cropImageLauncher.launch(
+                new CropImageContractOptions(null, new CropImageOptions())
+                        .setGuidelines(CropImageView.Guidelines.ON)
+                        .setAspectRatio(1, 1)
+        );
+    }*/
 
     private void GenderButtonActions() {
         maleBtn.setOnClickListener(new View.OnClickListener() {
