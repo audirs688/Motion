@@ -31,18 +31,15 @@
   
 <h2> 📸 Screenshots </h2>
 
-<img src="ss/01.jpg" width="400"/> <img src="ss/02.jpg" width="400"/>
-<img src="ss/03.jpg" width="400"/> <img src="ss/04.jpg" width="400"/>
+<img src="ss/02.jpg" width="400"/> <img src="ss/03.jpg" width="400"/> 
 <img src="ss/05.jpg" width="400"/> <img src="ss/06.jpg" width="400"/>
 <img src="ss/07.jpg" width="400"/> <img src="ss/08.jpg" width="400"/>
 <img src="ss/09.jpg" width="400"/> <img src="ss/10.jpg" width="400"/>
-<img src="ss/11.jpg" width="400"/> <img src="ss/12.jpg" width="400"/>
-<img src="ss/13.jpg" width="400"/> <img src="ss/14.jpg" width="400"/>
-<img src="ss/15.jpg" width="400"/> <img src="ss/16.jpg" width="400"/>
-<img src="ss/17.jpg" width="400"/> <img src="ss/18.jpg" width="400"/>
+<img src="ss/12.jpg" width="400"/> <img src="ss/13.jpg" width="400"/> 
+<img src="ss/14.jpg" width="400"/> <img src="ss/15.jpg" width="400"/> 
+<img src="ss/16.jpg" width="400"/> <img src="ss/17.jpg" width="400"/> 
 <img src="ss/19.jpg" width="400"/> <img src="ss/20.jpg" width="400"/>
-<img src="ss/21.jpg" width="400"/> <img src="ss/22.jpg" width="400"/>
-<img src="ss/23.jpg" width="400"/> <img src="ss/24.jpg" width="400"/>
+<img src="ss/21.jpg" width="400"/> <img src="ss/23.jpg" width="400"/>
 <img src="ss/25.jpg" width="400"/> <img src="ss/26.jpg" width="400"/>
 <img src="ss/27.jpg" width="400"/> <img src="ss/28.jpg" width="400"/>
 
