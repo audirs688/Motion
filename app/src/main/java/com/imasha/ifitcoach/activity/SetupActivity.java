@@ -211,6 +211,7 @@ public class SetupActivity extends AppCompatActivity {
                             //startCrop(selectedImageUri);
                             croppedUserImage = selectedImageUri;
                             Picasso.with(SetupActivity.this).load(croppedUserImage).placeholder(R.drawable.default_user_image).into(userImage);
+                            imagePick= 1;
                         }
                     }
                 });
